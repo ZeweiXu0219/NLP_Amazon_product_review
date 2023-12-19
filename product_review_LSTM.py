@@ -27,7 +27,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from prod_review_Dataset import MyData
 from models.LSTM_model import SLCABG
-from models.BERT_embedding import Embedding
+from models.BERT_Embedding import Embedding
 sw = stopwords.words('english')
 d = enchant.Dict("en_US")
 
@@ -295,8 +295,8 @@ class Sentence_classification(object):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    path = '/root/autodl-tmp/nlp_project_file/product_review'
-    data_path = '/root/autodl-tmp/nlp_project_file/product_review/dataset'
+    path = '/root/autodl-tmp/project_data_file/product_review_senti_analysis'
+    data_path = '/root/autodl-tmp/project_data_file/product_review_senti_analysis/dataset'
     SENTENCE_LENGTH = 40
     WORD_SIZE = 15000
     EMBED_SIZE = 200
